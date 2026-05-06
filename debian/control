@@ -1,0 +1,31 @@
+Source: php-phpdocumentor-guides
+Section: php
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends: debhelper-compat (= 13), jq
+Standards-Version: 4.6.2
+Homepage: https://github.com/phpDocumentor/guides-core
+Vcs-Git: https://github.com/Vitexus/php-phpdocumentor-guides.git
+Rules-Requires-Root: no
+
+Package: php-phpdocumentor-guides
+Architecture: all
+Depends: ${misc:Depends}, php-cli | php, composer,
+ php-doctrine-deprecations,
+ php-league-flysystem,
+ php-league-tactician,
+ php-league-uri,
+ php-phpdocumentor-flyfinder,
+ php-phpdocumentor-filesystem,
+ php-psr-event-dispatcher,
+ php-symfony-clock,
+ php-symfony-html-sanitizer,
+ php-symfony-http-client,
+ php-symfony-polyfill-php84,
+ php-symfony-string,
+ php-symfony-translation-contracts,
+ php-twig,
+ php-webmozart-assert
+Description: Core component for phpDocumentor guides rendering
+ Provides the core functionality for parsing and rendering
+ documentation guides in phpDocumentor.
